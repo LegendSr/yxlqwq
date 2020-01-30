@@ -14,4 +14,6 @@ public class GreetingController {
         mode.addAttribute("name",name);
         return "greeting";
     }
+    @GetMapping("/")
+    public String index(){return "index";}
 }
